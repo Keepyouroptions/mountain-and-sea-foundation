@@ -11,7 +11,8 @@
   --line: rgba(27,36,32,0.09);
   --text-muted: #4B564E;
   --logo-teal: #0F3737;
-  --logo-light-blue: #79CADF;
+  --footer-teal: #52706E;
+  --logo-gold-tint: #F3E2B0;
 
   --font-display: "Fraunces", serif;
   --font-body: "Work Sans", sans-serif;
@@ -103,7 +104,7 @@ a:focus-visible, .btn:focus-visible {
 
 /* ---------- HERO ---------- */
 .hero {
-  background: var(--logo-light-blue);
+  background: var(--logo-gold-tint);
   color: var(--ink);
   text-align: center;
   padding: 76px 24px 88px;
@@ -156,6 +157,7 @@ a:focus-visible, .btn:focus-visible {
 .btn-brass {
   background: var(--brass);
   color: #fff;
+  box-shadow: 0 4px 14px rgba(34,48,26,0.18);
 }
 .btn-brass:hover { background: var(--forest); }
 
@@ -329,7 +331,7 @@ a:focus-visible, .btn:focus-visible {
 
 /* ---------- CLOSING (merged hero + CTA) ---------- */
 .closing {
-  background: var(--logo-light-blue);
+  background: var(--logo-gold-tint);
   color: var(--ink);
   text-align: center;
   padding: 88px 24px;
@@ -354,12 +356,12 @@ a:focus-visible, .btn:focus-visible {
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background: var(--logo-teal);
-  color: rgba(255,255,255,0.75);
+  background: var(--footer-teal);
+  color: rgba(255,255,255,0.85);
   text-align: center;
   padding: 40px 24px;
   font-size: 0.85rem;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .footer-logo {
