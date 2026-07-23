@@ -70,7 +70,7 @@ a:focus-visible, .btn:focus-visible {
 .nav-logo {
   width: 36px;
   height: 36px;
-  border-radius: 6px;
+  border-radius: 0;
   flex-shrink: 0;
 }
 
@@ -102,22 +102,10 @@ a:focus-visible, .btn:focus-visible {
 
 /* ---------- HERO ---------- */
 .hero {
-  position: relative;
   background: var(--logo-teal);
   color: #fff;
   text-align: center;
-  padding: 96px 24px 88px;
-}
-
-.hero-logo-corner {
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  width: 84px;
-  height: 84px;
-  border-radius: 0;
-  object-fit: cover;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  padding: 76px 24px 88px;
 }
 
 .hero-eyebrow {
@@ -201,7 +189,7 @@ a:focus-visible, .btn:focus-visible {
 
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 40px;
   margin-bottom: 64px;
 }
@@ -221,17 +209,19 @@ a:focus-visible, .btn:focus-visible {
 }
 
 .mv-heading {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: clamp(1.7rem, 3.2vw, 2.2rem);
-  margin: 0 0 32px;
-  color: var(--forest-deep);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+  color: var(--brass);
   text-align: center;
 }
 
 .mv-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 24px;
   text-align: left;
 }
@@ -241,7 +231,6 @@ a:focus-visible, .btn:focus-visible {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 32px 30px;
-  border-top: 3px solid var(--brass);
 }
 
 .mv-card h3 {
@@ -276,7 +265,7 @@ a:focus-visible, .btn:focus-visible {
 
 .support-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 24px;
   text-align: left;
 }
@@ -286,7 +275,6 @@ a:focus-visible, .btn:focus-visible {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 30px 26px;
-  border-top: 3px solid var(--forest);
   display: flex;
   flex-direction: column;
 }
@@ -376,18 +364,13 @@ a:focus-visible, .btn:focus-visible {
   width: 40px;
   height: 40px;
   margin: 0 auto 14px;
-  border-radius: 6px;
+  border-radius: 0;
 }
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 720px) {
   .nav-links { display: none; }
   .nav-brand span { font-size: 0.92rem; }
-  .hero-logo-corner { width: 56px; height: 56px; top: 16px; left: 16px; }
-  .hero { padding-top: 76px; }
-  .about-grid { grid-template-columns: 1fr; gap: 32px; }
-  .mv-grid { grid-template-columns: 1fr; }
-  .support-grid { grid-template-columns: 1fr; }
 }
 
 /* ---------- REDUCED MOTION ---------- */
