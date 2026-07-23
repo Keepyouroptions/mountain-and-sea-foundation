@@ -105,7 +105,7 @@ a:focus-visible, .btn:focus-visible {
 
 /* ---------- HERO ---------- */
 .hero {
-  background: var(--planty-offwhite);
+  background: var(--bg);
   border-bottom: 1px solid var(--line);
   color: var(--ink);
   text-align: center;
@@ -333,7 +333,7 @@ a:focus-visible, .btn:focus-visible {
 
 /* ---------- CLOSING (merged hero + CTA) ---------- */
 .closing {
-  background: var(--planty-offwhite);
+  background: var(--bg);
   border-top: 1px solid var(--line);
   color: var(--ink);
   text-align: center;
