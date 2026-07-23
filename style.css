@@ -11,6 +11,7 @@
   --line: rgba(27,36,32,0.09);
   --text-muted: #4B564E;
   --logo-teal: #0F3737;
+  --logo-light-blue: #79CADF;
 
   --font-display: "Fraunces", serif;
   --font-body: "Work Sans", sans-serif;
@@ -42,8 +43,8 @@ a:focus-visible, .btn:focus-visible {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: var(--surface);
-  border-bottom: 1px solid var(--line);
+  background: var(--logo-teal);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .nav-inner {
@@ -60,7 +61,7 @@ a:focus-visible, .btn:focus-visible {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--forest-deep);
+  color: #fff;
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 1.05rem;
@@ -81,11 +82,11 @@ a:focus-visible, .btn:focus-visible {
 }
 
 .nav-links a {
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.78);
   transition: color 0.15s ease;
 }
 
-.nav-links a:hover { color: var(--forest); }
+.nav-links a:hover { color: var(--brass-light); }
 
 .nav-cta {
   background: var(--brass);
@@ -98,12 +99,12 @@ a:focus-visible, .btn:focus-visible {
   transition: background 0.15s ease;
 }
 
-.nav-cta:hover { background: var(--forest); }
+.nav-cta:hover { background: var(--brass-light); }
 
 /* ---------- HERO ---------- */
 .hero {
-  background: var(--logo-teal);
-  color: #fff;
+  background: var(--logo-light-blue);
+  color: var(--ink);
   text-align: center;
   padding: 76px 24px 88px;
 }
@@ -112,8 +113,8 @@ a:focus-visible, .btn:focus-visible {
   font-size: 0.85rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--brass-light);
-  font-weight: 600;
+  color: var(--forest-deep);
+  font-weight: 700;
   margin: 0 0 18px;
 }
 
@@ -124,13 +125,13 @@ a:focus-visible, .btn:focus-visible {
   line-height: 1.12;
   margin: 0 auto 24px;
   max-width: 820px;
-  color: #fff;
+  color: var(--ink);
 }
 
 .hero-sub {
   max-width: 600px;
   margin: 0 auto 36px;
-  color: rgba(255,255,255,0.82);
+  color: var(--steel);
   font-size: 1.15rem;
 }
 
@@ -328,8 +329,8 @@ a:focus-visible, .btn:focus-visible {
 
 /* ---------- CLOSING (merged hero + CTA) ---------- */
 .closing {
-  background: var(--logo-teal);
-  color: #fff;
+  background: var(--logo-light-blue);
+  color: var(--ink);
   text-align: center;
   padding: 88px 24px;
 }
@@ -341,23 +342,24 @@ a:focus-visible, .btn:focus-visible {
   max-width: 700px;
   margin: 0 auto 18px;
   line-height: 1.25;
+  color: var(--ink);
 }
 
 .closing p {
   max-width: 540px;
   margin: 0 auto 34px;
-  color: rgba(255,255,255,0.85);
+  color: var(--steel);
   font-size: 1.05rem;
 }
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background: var(--surface);
-  color: var(--text-muted);
+  background: var(--logo-teal);
+  color: rgba(255,255,255,0.75);
   text-align: center;
   padding: 40px 24px;
   font-size: 0.85rem;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .footer-logo {
