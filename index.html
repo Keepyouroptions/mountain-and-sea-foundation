@@ -7,7 +7,7 @@
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,14 +16,13 @@
   <div class="nav-inner">
     <a href="#top" class="nav-brand">
       <img src="assets/logo.png" alt="Mountain and Sea Foundation" class="nav-logo">
-      <span>Mountain and Sea</span>
+      <span>Mountain and Sea Foundation</span>
     </a>
     <nav class="nav-links">
-      <a href="#mission">Mission</a>
-      <a href="#programs">Programs</a>
-      <a href="#involved">Get Involved</a>
+      <a href="#heart">Mission</a>
+      <a href="#help">Get Involved</a>
     </nav>
-    <a href="#involved" class="nav-cta">Donate</a>
+    <a href="https://icosahedron-marlin-eale.squarespace.com/donate" class="nav-cta">Donate</a>
   </div>
 </header>
 
@@ -33,15 +32,27 @@
     <img src="assets/logo.png" alt="Mountain and Sea Foundation emblem" class="hero-logo">
     <p class="hero-eyebrow">Gardening &middot; Nature-Inspired Arts &middot; Science</p>
     <h1>Growing a nature-loving<br>community, one garden at a time.</h1>
-    <p class="hero-sub">Mountain and Sea Foundation turns green spaces into classrooms — using gardening, science, and art to grow a nature loving community. Join us in planting the future.</p>
+    <p class="hero-sub">Mountain and Sea Foundation turns green spaces into classrooms — using gardening, science, and art to grow a nature loving community.</p>
     <div class="hero-actions">
-      <a href="https://icosahedron-marlin-eale.squarespace.com/donate" class="btn btn-gold">Donate</a>
-      <a href="#involved" class="btn btn-ghost">Get involved</a>
+      <a href="https://icosahedron-marlin-eale.squarespace.com/donate" class="btn btn-brass">Donate</a>
+      <a href="#help" class="btn btn-ghost">Get involved</a>
     </div>
   </section>
 
-  <section class="mission" id="mission">
+  <section class="heart" id="heart">
     <p class="section-eyebrow">The Heart of Our Foundation</p>
+
+    <div class="about-grid">
+      <div class="about-block">
+        <h3>Who We Are</h3>
+        <p>Mountain and Sea Foundation is a nonprofit organization devoted to gardening, nature-inspired arts and scientific creation, connecting people deeply to the places we depend on, and fostering healthy, resilient communities for today and for tomorrow.</p>
+      </div>
+      <div class="about-block">
+        <h3>Why Support Us</h3>
+        <p>We are an active foundation doing hands-on charity and education to build local communities to share the love of nature. We focus on measurable work: promote gardening, build community gardens, teach children about plants, arts, and science, and engage other adjacent programs. Our leadership is deeply involved and handle daily operations as volunteers.</p>
+      </div>
+    </div>
+
     <h2 class="mv-heading">Mission and Vision</h2>
     <div class="mv-grid">
       <article class="mv-card">
@@ -55,26 +66,30 @@
     </div>
   </section>
 
-  <section class="about">
-    <div class="about-grid">
-      <div class="about-block">
-        <p class="section-eyebrow">Who We Are</p>
-        <p>Mountain and Sea Foundation is a nonprofit organization devoted to gardening, nature-inspired arts and scientific creation, connecting people deeply to the places we depend on, and fostering healthy, resilient communities for today and for tomorrow.</p>
-      </div>
-      <div class="about-block">
-        <p class="section-eyebrow">Why Support Us</p>
-        <p>We are an active foundation doing hands-on charity and education to build local communities to share the love of nature. We focus on measurable work: promote gardening, build community gardens, teach children about plants, arts, and science, and engage other adjacent programs. Our leadership is deeply involved and handle daily operations as volunteers.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="programs" id="programs">
+  <section class="programs" id="help">
     <p class="section-eyebrow">Ways to Help</p>
     <h2>How to support Mountain and Sea Foundation</h2>
 
     <div class="support-grid">
       <article class="support-card">
-        <h3>Sell on Our Planty</h3>
+        <div class="support-card-head">
+          <svg class="planty-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#4a6d51" />
+                <stop offset="100%" stop-color="#2a3d2e" />
+              </linearGradient>
+            </defs>
+            <path d="M25 45L30 85H70L75 45H25Z" fill="url(#leafGrad)" />
+            <path d="M35 45V35C35 26.7157 41.7157 20 50 20C58.2843 20 65 26.7157 65 35V45"
+                  stroke="#F0F3F4" stroke-width="4" stroke-linecap="square"/>
+            <rect x="48" y="45" width="4" height="30" fill="#141B15" opacity="0.3"/>
+          </svg>
+          <div>
+            <span class="planty-wordmark">Our Planty</span>
+            <h3>Sell on Our Planty</h3>
+          </div>
+        </div>
         <p>Sell your garden plants through the foundation and donate a portion of your sales proceeds to support the foundation's mission.</p>
         <a href="https://icosahedron-marlin-eale.squarespace.com/our-planty" class="support-link">Join Our Planty &rarr;</a>
       </article>
@@ -96,13 +111,13 @@
     </div>
   </section>
 
-  <section class="involved" id="involved">
-    <img src="assets/logo.png" alt="" class="involved-logo" aria-hidden="true">
-    <h2>Join us in planting the future</h2>
+  <section class="closing">
+    <img src="assets/logo.png" alt="" class="closing-logo" aria-hidden="true">
+    <h2>Growing a nature-loving community, one garden at a time —<br>join us in planting the future.</h2>
     <p>Mountain and Sea Foundation turns green spaces into classrooms — using gardening, science, and art to grow a nature loving community.</p>
     <div class="hero-actions">
-      <a href="https://icosahedron-marlin-eale.squarespace.com/donate" class="btn btn-gold">Donate now</a>
-      <a href="https://icosahedron-marlin-eale.squarespace.com/volunteer" class="btn btn-ghost">Volunteer with us</a>
+      <a href="https://icosahedron-marlin-eale.squarespace.com/donate" class="btn btn-brass">Donate now</a>
+      <a href="https://icosahedron-marlin-eale.squarespace.com/volunteer" class="btn btn-ghost-dark">Volunteer with us</a>
     </div>
   </section>
 
