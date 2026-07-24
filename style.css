@@ -313,7 +313,11 @@ a:focus-visible, .btn:focus-visible {
   align-items: center;
   gap: 14px;
   margin-bottom: 4px;
+  text-decoration: none;
+  color: inherit;
 }
+
+.support-card-head:hover h3 { color: var(--brass); }
 
 .planty-mark {
   width: 40px;
@@ -367,10 +371,15 @@ a:focus-visible, .btn:focus-visible {
   border-top: 1px solid rgba(255,255,255,0.1);
 }
 
+.footer-logo-link {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
 .footer-logo {
   width: 40px;
   height: 40px;
-  margin: 0 auto 14px;
+  margin: 0 auto;
   border-radius: 0;
 }
 
