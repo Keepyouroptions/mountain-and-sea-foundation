@@ -71,8 +71,8 @@ a:focus-visible, .btn:focus-visible {
 }
 
 .nav-logo {
-  width: 36px;
-  height: 36px;
+  width: 46px;
+  height: 46px;
   border-radius: 0;
   flex-shrink: 0;
 }
@@ -377,8 +377,8 @@ a:focus-visible, .btn:focus-visible {
 }
 
 .footer-logo {
-  width: 40px;
-  height: 40px;
+  width: 54px;
+  height: 54px;
   margin: 0 auto;
   border-radius: 0;
 }
