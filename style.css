@@ -353,16 +353,6 @@ a:focus-visible, .btn:focus-visible {
   flex-shrink: 0;
 }
 
-.planty-wordmark {
-  display: block;
-  font-size: 0.68rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--brass);
-  font-weight: 700;
-  margin-bottom: 2px;
-}
-
 /* ---------- CLOSING (merged hero + CTA) ---------- */
 .closing {
   background: var(--bg);
@@ -876,22 +866,25 @@ a:focus-visible, .btn:focus-visible {
 /* ---------- FUND NOTE ---------- */
 .fund-note {
   max-width: 780px;
-  margin: 40px auto 0;
+  margin: 8px auto 72px;
   background: var(--planty-offwhite);
   border-radius: 14px;
-  padding: 24px 28px;
+  padding: 26px 28px;
   text-align: center;
+}
+
+@media (max-width: 780px) {
+  .fund-note { margin-left: 24px; margin-right: 24px; }
 }
 
 .fund-note p {
   margin: 0;
   color: var(--text-muted);
-  font-size: 0.98rem;
+  font-size: 1.05rem;
 }
 
 .fund-note strong { color: var(--forest-deep); }
 
 @media (min-width: 860px) {
-  .club-columns { grid-template-columns: 1fr 1fr; }
   .champion-perks { grid-template-columns: 1fr 1fr; }
 }
