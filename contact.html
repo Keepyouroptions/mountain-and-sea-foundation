@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Mountain and Sea Foundation</title>
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="https://mountainandseafoundation.org" class="nav-brand">
+      <img src="assets/logo_hero.png" alt="Mountain and Sea Foundation" class="nav-logo">
+      <span>Mountain and Sea Foundation</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#heart">Mission</a>
+      <a href="index.html#help">Get Involved</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="https://icosahedron-marlin-eale.squarespace.com/donate" class="nav-cta">Donate</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="contact-hero">
+    <p class="hero-eyebrow">Get in Touch</p>
+    <h1>We'd love to hear from you.</h1>
+    <p class="hero-sub">Questions about volunteering, teaching, Our Planty, or anything else — send us a note and we'll get back to you.</p>
+  </section>
+
+  <section class="contact-body">
+    <div class="contact-grid">
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-brass">Send Message</button>
+        <p class="form-note">This opens your email app with your message pre-filled. If nothing opens (common if you only use webmail in a browser), just copy our email address below and send it that way instead.</p>
+        <div class="email-fallback">
+          <code id="fallback-email">hello@mountainandseafoundation.org</code>
+          <button type="button" class="copy-btn" id="copy-email-btn">Copy</button>
+        </div>
+      </form>
+
+      <div class="contact-info">
+        <h3>Reach us directly</h3>
+        <p>Prefer to email straight away? Write to us any time.</p>
+        <a href="mailto:hello@mountainandseafoundation.org" class="contact-email">hello@mountainandseafoundation.org</a>
+
+        <h3 class="contact-info-secondary">Other ways to connect</h3>
+        <ul class="contact-links-list">
+          <li><a href="https://ourplanty.com" target="_blank" rel="noopener">Sell on Our Planty &rarr;</a></li>
+          <li><a href="https://icosahedron-marlin-eale.squarespace.com/programs-store">Teach with us &rarr;</a></li>
+          <li><a href="https://icosahedron-marlin-eale.squarespace.com/volunteer">Volunteer &rarr;</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <a href="https://mountainandseafoundation.org" aria-label="Mountain and Sea Foundation home" class="footer-logo-link">
+    <img src="assets/logo_hero.png" alt="Mountain and Sea Foundation" class="footer-logo">
+  </a>
+  <p class="footer-links">
+    <a href="contact.html">Contact</a>
+    <span aria-hidden="true">&middot;</span>
+    <a href="mailto:hello@mountainandseafoundation.org">hello@mountainandseafoundation.org</a>
+  </p>
+  <p>&copy; <span id="year"></span> Mountain and Sea Foundation. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
