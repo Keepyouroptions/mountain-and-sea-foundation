@@ -404,8 +404,8 @@ a:focus-visible, .btn:focus-visible {
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 720px) {
   .nav-toggle { display: flex; }
-  .tier-badge-icon { width: 26px; height: 26px; }
-  .apex-badge-icon { width: 48px; height: 48px; }
+  .tier-badge-icon { width: 72px; height: 72px; }
+  .apex-badge-icon { width: 80px; height: 80px; }
   .nav-links {
     display: none;
     position: absolute;
@@ -725,38 +725,42 @@ a:focus-visible, .btn:focus-visible {
 
 .circle-tier {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 6px 16px;
-  padding: 16px 0;
+  text-align: center;
+  gap: 10px;
+  padding: 32px 0;
   border-top: 1px solid var(--line);
 }
 
 .club-panel .circle-tier:first-of-type { border-top: none; padding-top: 0; }
 
 .circle-tier-name {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   color: var(--ink);
 }
 
+.tier-badge-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 2px 0;
+}
+
 .tier-badge-icon {
-  width: 30px;
-  height: 30px;
+  width: 90px;
+  height: 90px;
   flex-shrink: 0;
 }
 
 .circle-tier-price {
   display: flex;
   align-items: baseline;
+  justify-content: center;
   gap: 8px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--club-accent, var(--forest));
   white-space: nowrap;
 }
@@ -779,10 +783,10 @@ a:focus-visible, .btn:focus-visible {
 }
 
 .circle-tier-perk {
-  flex-basis: 100%;
+  max-width: 300px;
   color: var(--text-muted);
   font-size: 0.96rem;
-  margin: -6px 0 0;
+  margin: 0;
 }
 
 .club-join-btn {
@@ -816,9 +820,9 @@ a:focus-visible, .btn:focus-visible {
 }
 
 .apex-badge-icon {
-  width: 56px;
-  height: 56px;
-  margin: 0 auto 12px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 14px;
   display: block;
 }
 
