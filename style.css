@@ -404,6 +404,8 @@ a:focus-visible, .btn:focus-visible {
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 720px) {
   .nav-toggle { display: flex; }
+  .tier-badge-icon { width: 26px; height: 26px; }
+  .apex-badge-icon { width: 48px; height: 48px; }
   .nav-links {
     display: none;
     position: absolute;
@@ -723,7 +725,7 @@ a:focus-visible, .btn:focus-visible {
 
 .circle-tier {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 6px 16px;
@@ -734,10 +736,19 @@ a:focus-visible, .btn:focus-visible {
 .club-panel .circle-tier:first-of-type { border-top: none; padding-top: 0; }
 
 .circle-tier-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 1.15rem;
   color: var(--ink);
+}
+
+.tier-badge-icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
 }
 
 .circle-tier-price {
@@ -802,6 +813,13 @@ a:focus-visible, .btn:focus-visible {
   color: var(--brass-light);
   font-weight: 700;
   margin: 0 0 14px;
+}
+
+.apex-badge-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 12px;
+  display: block;
 }
 
 .champion-card h2 {
