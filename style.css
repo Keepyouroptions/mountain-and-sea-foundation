@@ -404,8 +404,8 @@ a:focus-visible, .btn:focus-visible {
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 720px) {
   .nav-toggle { display: flex; }
-  .tier-badge-icon { width: 72px; height: 72px; }
-  .apex-badge-icon { width: 80px; height: 80px; }
+  .tier-badge-icon { width: 108px; height: 108px; }
+  .apex-badge-icon { width: 130px; height: 130px; }
   .nav-links {
     display: none;
     position: absolute;
@@ -749,8 +749,8 @@ a:focus-visible, .btn:focus-visible {
 }
 
 .tier-badge-icon {
-  width: 90px;
-  height: 90px;
+  width: 140px;
+  height: 140px;
   flex-shrink: 0;
 }
 
@@ -820,9 +820,9 @@ a:focus-visible, .btn:focus-visible {
 }
 
 .apex-badge-icon {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 14px;
+  width: 170px;
+  height: 170px;
+  margin: 0 auto 16px;
   display: block;
 }
 
