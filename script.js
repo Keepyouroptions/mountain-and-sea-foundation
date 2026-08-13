@@ -1,21 +1,5 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Mobile nav toggle
-const navToggle = document.getElementById('nav-toggle');
-const navLinksEl = document.getElementById('nav-links');
-if (navToggle && navLinksEl) {
-  navToggle.addEventListener('click', function () {
-    const isOpen = navLinksEl.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
-  navLinksEl.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', function () {
-      navLinksEl.classList.remove('open');
-      navToggle.setAttribute('aria-expanded', 'false');
-    });
-  });
-}
-
 // Contact form: build a mailto link from the form fields (no backend needed)
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
