@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us | Mountain and Sea Foundation</title>
+<title>About — Mountain and Sea Foundation</title>
 <meta name="description" content="Mountain and Sea Foundation is a 501(c)(3) nonprofit (EIN 39-3607866) advancing environmental education and community gardening. Learn about our mission, programs, and legal status.">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,15 +15,21 @@
 
 <header class="nav">
   <div class="nav-inner">
-    <a href="index.html#top" class="nav-brand">
+    <a href="https://mountainandseafoundation.org" class="nav-brand">
       <img src="assets/logo_hero.png" alt="Mountain and Sea Foundation" class="nav-logo">
       <span>Mountain and Sea Foundation</span>
     </a>
-    <nav class="nav-links">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html#heart">Mission</a>
       <a href="about.html">About</a>
       <a href="index.html#help">Get Involved</a>
+      <a href="donor-circles.html">Friend Circles</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <a href="https://icosahedron-marlin-eale.squarespace.com/donate" class="nav-cta">Donate</a>
+    <a href="contact.html" class="nav-cta">Donate</a>
   </div>
 </header>
 
@@ -113,7 +119,14 @@
 </main>
 
 <footer class="footer">
-  <img src="assets/logo_hero.png" alt="Mountain and Sea Foundation" class="footer-logo">
+  <a href="https://mountainandseafoundation.org" aria-label="Mountain and Sea Foundation home" class="footer-logo-link">
+    <img src="assets/logo_hero.png" alt="Mountain and Sea Foundation" class="footer-logo">
+  </a>
+  <p class="footer-links">
+    <a href="contact.html">Contact</a>
+    <span aria-hidden="true">&middot;</span>
+    <a href="mailto:hello@mountainandseafoundation.org">hello@mountainandseafoundation.org</a>
+  </p>
   <p>Mountain and Sea Foundation is a 501(c)(3) tax-exempt organization &middot; EIN 39-3607866</p>
   <p>&copy; <span id="year"></span> Mountain and Sea Foundation. All rights reserved.</p>
 </footer>

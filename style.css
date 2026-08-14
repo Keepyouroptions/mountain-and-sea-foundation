@@ -353,6 +353,16 @@ a:focus-visible, .btn:focus-visible {
   flex-shrink: 0;
 }
 
+.planty-wordmark {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--brass);
+  margin-bottom: 2px;
+}
+
 /* ---------- CLOSING (merged hero + CTA) ---------- */
 .closing {
   background: var(--bg);
@@ -493,7 +503,8 @@ a:focus-visible, .btn:focus-visible {
 }
 
 .form-row input,
-.form-row textarea {
+.form-row textarea,
+.form-row select {
   width: 100%;
   box-sizing: border-box;
   font-family: var(--font-body);
@@ -507,7 +518,8 @@ a:focus-visible, .btn:focus-visible {
 }
 
 .form-row input:focus,
-.form-row textarea:focus {
+.form-row textarea:focus,
+.form-row select:focus {
   outline: 2px solid var(--brass);
   outline-offset: 1px;
 }
@@ -909,4 +921,5 @@ a:focus-visible, .btn:focus-visible {
 
 @media (min-width: 860px) {
   .champion-perks { grid-template-columns: 1fr 1fr; }
+  .club-columns { grid-template-columns: 1fr 1fr; }
 }

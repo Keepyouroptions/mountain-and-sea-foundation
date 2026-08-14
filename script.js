@@ -26,11 +26,14 @@ if (contactForm) {
     const email = document.getElementById('email').value.trim();
     const subject = document.getElementById('subject').value.trim();
     const message = document.getElementById('message').value.trim();
+    const interestField = document.getElementById('interest');
+    const interest = interestField ? interestField.value.trim() : '';
 
     const to = 'hello@mountainandseafoundation.org';
     const mailSubject = encodeURIComponent(subject || `Message from ${name}`);
+    const interestLine = interest ? `Interested in: ${interest}\n\n` : '';
     const mailBody = encodeURIComponent(
-      `${message}\n\n---\nFrom: ${name}\nEmail: ${email}`
+      `${interestLine}${message}\n\n---\nFrom: ${name}\nEmail: ${email}`
     );
 
     window.location.href = `mailto:${to}?subject=${mailSubject}&body=${mailBody}`;
