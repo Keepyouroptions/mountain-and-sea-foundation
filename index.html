@@ -14,14 +14,18 @@
 
 <header class="nav">
   <div class="nav-inner">
-    <a href="#top" class="nav-brand">
+    <a href="https://mountainandseafoundation.org" class="nav-brand">
       <img src="assets/logo_hero.png" alt="Mountain and Sea Foundation" class="nav-logo">
       <span>Mountain and Sea Foundation</span>
     </a>
-    <nav class="nav-links">
-      <a href="about.html">About</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="nav-links">
       <a href="#heart">Mission</a>
       <a href="#help">Get Involved</a>
+      <a href="donor-circles.html">Friend Circles</a>
+      <a href="contact.html">Contact</a>
     </nav>
     <a href="https://icosahedron-marlin-eale.squarespace.com/donate" class="nav-cta">Donate</a>
   </div>
@@ -56,11 +60,11 @@
     <div class="mv-grid">
       <article class="mv-card">
         <h3>Mission</h3>
-        <p>Our goal is for everyone to do a little each day to share love for nature.</p>
+        <p>Our goal is for everyone to do a little each day to share love for nature and help preserve the environment we depend on.</p>
       </article>
       <article class="mv-card">
         <h3>Vision</h3>
-        <p>We envision a future where our shared efforts deepen people's love of nature, where we call our home.</p>
+        <p>We envision a future where our shared efforts protect and preserve the environment, deepening people's love of nature, where we call our home.</p>
       </article>
     </div>
   </section>
@@ -71,26 +75,15 @@
 
     <div class="support-grid">
       <article class="support-card">
-        <div class="support-card-head">
-          <svg class="planty-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <defs>
-              <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#4a6d51" />
-                <stop offset="100%" stop-color="#2a3d2e" />
-              </linearGradient>
-            </defs>
-            <path d="M25 45L30 85H70L75 45H25Z" fill="url(#leafGrad)" />
-            <path d="M35 45V35C35 26.7157 41.7157 20 50 20C58.2843 20 65 26.7157 65 35V45"
-                  stroke="#F0F3F4" stroke-width="4" stroke-linecap="square"/>
-            <rect x="48" y="45" width="4" height="30" fill="#141B15" opacity="0.3"/>
+        <a href="https://ourplanty.com" class="support-card-head" target="_blank" rel="noopener">
+          <svg class="planty-mark" viewBox="0 0 320 330" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <polygon points="36,132 284,132 236,285 84,285" fill="#3D5A43"/>
+            <path d="M 62 135 C 65 25, 255 25, 258 135" stroke="#D9A05B" stroke-width="8" fill="none"/>
           </svg>
-          <div>
-            <span class="planty-wordmark">Our Planty</span>
-            <h3>Sell on Our Planty</h3>
-          </div>
-        </div>
+          <h3>Join Our Planty</h3>
+        </a>
         <p>Sell your garden plants through the foundation and donate a portion of your sales proceeds to support the foundation's mission.</p>
-        <a href="https://icosahedron-marlin-eale.squarespace.com/our-planty" class="support-link">Join Our Planty &rarr;</a>
+        <a href="https://www.ourplanty.com" class="support-link" target="_blank" rel="noopener">Join Our Planty &rarr;</a>
       </article>
       <article class="support-card">
         <h3>Teach</h3>
@@ -107,6 +100,11 @@
         <p>Your gift funds gardens, education programs, and the daily work of our all-volunteer leadership.</p>
         <a href="https://icosahedron-marlin-eale.squarespace.com/donate" class="support-link">Donate &rarr;</a>
       </article>
+      <article class="support-card">
+        <h3>Join a Friend Circle</h3>
+        <p>Become a monthly friend through the Mountain Club or Sea Club, and rise through the ranks as your membership continues.</p>
+        <a href="donor-circles.html" class="support-link">Explore Friend Circles &rarr;</a>
+      </article>
     </div>
   </section>
 
@@ -122,8 +120,14 @@
 </main>
 
 <footer class="footer">
-  <img src="assets/logo_hero.png" alt="Mountain and Sea Foundation" class="footer-logo">
-  <p>Mountain and Sea Foundation is a 501(c)(3) tax-exempt organization &middot; EIN 39-3607866</p>
+  <a href="https://mountainandseafoundation.org" aria-label="Mountain and Sea Foundation home" class="footer-logo-link">
+    <img src="assets/logo_hero.png" alt="Mountain and Sea Foundation" class="footer-logo">
+  </a>
+  <p class="footer-links">
+    <a href="contact.html">Contact</a>
+    <span aria-hidden="true">&middot;</span>
+    <a href="mailto:hello@mountainandseafoundation.org">hello@mountainandseafoundation.org</a>
+  </p>
   <p>&copy; <span id="year"></span> Mountain and Sea Foundation. All rights reserved.</p>
 </footer>
 
