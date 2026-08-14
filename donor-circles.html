@@ -133,31 +133,58 @@
 
   <section class="champion">
     <div class="champion-card">
-      <svg class="apex-badge-icon" width="200" height="200" viewBox="0 0 200 200" aria-hidden="true">
-        <defs>
-          <linearGradient id="apexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#f5dca0"/>
-            <stop offset="45%" stop-color="#dfb15b"/>
-            <stop offset="100%" stop-color="#a8752c"/>
-          </linearGradient>
-        </defs>
-        <path d="M28 70 C 20 90, 20 110, 28 130" fill="none" stroke="#dfb15b" stroke-width="3" opacity="0.75"/>
-        <path d="M34 68 C 34 68, 26 90, 26 100 C 26 110, 34 132, 34 132" fill="none" stroke="#dfb15b" stroke-width="2.25" opacity="0.55"/>
-        <ellipse cx="30" cy="80" rx="6.5" ry="4" fill="#dfb15b" opacity="0.75" transform="rotate(-30 30 80)"/>
-        <ellipse cx="27" cy="100" rx="6.5" ry="4" fill="#dfb15b" opacity="0.75"/>
-        <ellipse cx="30" cy="120" rx="6.5" ry="4" fill="#dfb15b" opacity="0.75" transform="rotate(30 30 120)"/>
-        <path d="M172 70 C 180 90, 180 110, 172 130" fill="none" stroke="#dfb15b" stroke-width="3" opacity="0.75"/>
-        <path d="M166 68 C 166 68, 174 90, 174 100 C 174 110, 166 132, 166 132" fill="none" stroke="#dfb15b" stroke-width="2.25" opacity="0.55"/>
-        <ellipse cx="170" cy="80" rx="6.5" ry="4" fill="#dfb15b" opacity="0.75" transform="rotate(30 170 80)"/>
-        <ellipse cx="173" cy="100" rx="6.5" ry="4" fill="#dfb15b" opacity="0.75"/>
-        <ellipse cx="170" cy="120" rx="6.5" ry="4" fill="#dfb15b" opacity="0.75" transform="rotate(-30 170 120)"/>
-        <line x1="100" y1="52" x2="50" y2="135" stroke="url(#apexGrad)" stroke-width="5.5" stroke-linecap="round"/>
-        <line x1="100" y1="52" x2="150" y2="135" stroke="url(#apexGrad)" stroke-width="5.5" stroke-linecap="round"/>
-        <circle cx="100" cy="34" r="10" fill="none" stroke="url(#apexGrad)" stroke-width="4.5"/>
-        <line x1="100" y1="44" x2="100" y2="147" stroke="url(#apexGrad)" stroke-width="5" stroke-linecap="round"/>
-        <line x1="68" y1="78" x2="132" y2="78" stroke="url(#apexGrad)" stroke-width="4" stroke-linecap="round"/>
-        <path d="M38 122 C 58 160, 142 160, 162 122" fill="none" stroke="url(#apexGrad)" stroke-width="5.5" stroke-linecap="round"/>
-        <path d="M92 146 L100 153 L108 146" fill="none" stroke="url(#apexGrad)" stroke-width="4" stroke-linecap="round"/>
+      <svg class="apex-badge-icon" width="200" height="200" viewBox="0 0 500 500" fill="none" aria-hidden="true">
+        <!-- Background Elements Group -->
+        <g id="stars-and-laurels">
+          <!-- Stars (Positioned symmetrically in the upper quadrants) -->
+          <polygon points="110,145 113,155 123,155 115,161 118,171 110,165 102,171 105,161 97,155 107,155" fill="#dfb15b" />
+          <polygon points="390,145 393,155 403,155 395,161 398,171 390,165 382,171 385,161 377,155 387,155" fill="#dfb15b" />
+
+          <!-- Laurel Wings / Curved Side Details -->
+          <path d="M 85,210 C 70,250 72,310 110,345" stroke="#dfb15b" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+          <path d="M 90,212 C 78,250 80,305 115,340" stroke="#dfb15b" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+          <circle cx="80" cy="235" r="7" fill="#dfb15b" opacity="0.8"/>
+          <circle cx="77" cy="275" r="7" fill="#dfb15b" opacity="0.8"/>
+          <circle cx="85" cy="315" r="7" fill="#dfb15b" opacity="0.8"/>
+
+          <path d="M 415,210 C 430,250 428,310 390,345" stroke="#dfb15b" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+          <path d="M 410,212 C 422,250 420,305 385,340" stroke="#dfb15b" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+          <circle cx="420" cy="235" r="7" fill="#dfb15b" opacity="0.8"/>
+          <circle cx="423" cy="275" r="7" fill="#dfb15b" opacity="0.8"/>
+          <circle cx="415" cy="315" r="7" fill="#dfb15b" opacity="0.8"/>
+        </g>
+
+        <!-- Main Navigational & Anchor Framework Group -->
+        <g id="main-structure" stroke="#dfb15b" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Upper Ring / Eyelet -->
+          <circle cx="250" cy="85" r="25" stroke-width="7" fill="none" />
+
+          <!-- Crossbar / Stock -->
+          <line x1="170" y1="180" x2="330" y2="180" stroke-width="8" />
+
+          <!-- Main Vertical Shank / Stem -->
+          <line x1="250" y1="110" x2="250" y2="395" stroke-width="8" />
+
+          <!-- Central Helix / Corkscrew Detail -->
+          <path d="M 250,215 C 270,225 270,235 250,245 C 230,255 230,265 250,275 C 270,285 270,295 250,305 C 230,315 230,325 250,335" stroke-width="4" fill="none" />
+
+          <!-- Sextant Index Arms / Triangle Frame -->
+          <line x1="250" y1="135" x2="135" y2="350" stroke-width="7" />
+          <line x1="250" y1="135" x2="365" y2="350" stroke-width="7" />
+
+          <!-- Combined Crown, Flukes, and Arc Scale Base -->
+          <path d="M 115,290 C 135,385 365,385 385,290" stroke-width="8" fill="none" />
+
+          <!-- Secondary Concentric Arc Layer -->
+          <path d="M 140,320 C 165,365 335,365 360,320" stroke-width="3" fill="none" opacity="0.7" />
+
+          <!-- Anchor Flukes / Tips -->
+          <polygon points="115,290 100,295 110,275" fill="#dfb15b" stroke-width="2" />
+          <polygon points="385,290 400,295 390,275" fill="#dfb15b" stroke-width="2" />
+
+          <!-- Center Bottom Crown Base / Arrow Peak -->
+          <path d="M 235,372 L 250,382 L 265,372" stroke-width="4" fill="none" />
+        </g>
       </svg>
       <p class="champion-eyebrow">The Apex Circle</p>
       <h2>Mountain and Sea Champion</h2>
