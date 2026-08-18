@@ -1,0 +1,18 @@
+# Wrangler / Cloudflare build artifacts
+.wrangler/
+wrangler.jsonc
+wrangler.toml
+
+# Dependencies (if any tooling gets added later)
+node_modules/
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE folders
+.vscode/
+.idea/
+
+# Logs
+*.log
