@@ -18,21 +18,6 @@ if (navToggle && navLinksEl) {
 
 // Contact form: build a mailto link from the form fields (no backend needed)
 const contactForm = document.getElementById('contact-form');
-const interestField = document.getElementById('interest');
-const circleTierRow = document.getElementById('circle-tier-row');
-const circleTierField = document.getElementById('circle-tier');
-
-// Show the club/tier picker only when "Friend Circles" is selected
-if (interestField && circleTierRow) {
-  interestField.addEventListener('change', function () {
-    const showTierPicker = interestField.value === 'Friend Circles';
-    circleTierRow.hidden = !showTierPicker;
-    if (!showTierPicker && circleTierField) {
-      circleTierField.value = '';
-    }
-  });
-}
-
 if (contactForm) {
   contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -41,15 +26,14 @@ if (contactForm) {
     const email = document.getElementById('email').value.trim();
     const subject = document.getElementById('subject').value.trim();
     const message = document.getElementById('message').value.trim();
+    const interestField = document.getElementById('interest');
     const interest = interestField ? interestField.value.trim() : '';
-    const circleTier = (interest === 'Friend Circles' && circleTierField) ? circleTierField.value.trim() : '';
 
     const to = 'hello@mountainandseafoundation.org';
     const mailSubject = encodeURIComponent(subject || `Message from ${name}`);
-    const interestLine = interest ? `Interested in: ${interest}\n` : '';
-    const circleTierLine = circleTier ? `Club/Tier: ${circleTier}\n` : '';
+    const interestLine = interest ? `Interested in: ${interest}\n\n` : '';
     const mailBody = encodeURIComponent(
-      `${interestLine}${circleTierLine}${(interestLine || circleTierLine) ? '\n' : ''}${message}\n\n---\nFrom: ${name}\nEmail: ${email}`
+      `${interestLine}${message}\n\n---\nFrom: ${name}\nEmail: ${email}`
     );
 
     window.location.href = `mailto:${to}?subject=${mailSubject}&body=${mailBody}`;
